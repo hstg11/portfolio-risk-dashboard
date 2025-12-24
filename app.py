@@ -42,31 +42,35 @@ st.line_chart(data)
 
 
 
-
 st.markdown(
     """
     <style>
     .footer {
         position: fixed;
-        bottom: 70px;        
+        bottom: 70px;
         right: 15px;
-        color: #c1121f;
+
         font-size: 13px;
         font-weight: 600;
+        letter-spacing: .3px;
 
-        border: 1.5px solid #c1121f;
-        background: #ffe5e8;
-        padding: 6px 10px;
-        border-radius: 10px;
+        color: #b00020;                  /* elegant deep red */
+        border: 1.5px solid #b00020;     /* thin classy outline */
+        padding: 5px 10px;
+        border-radius: 999px;            /* pill shape */
 
-        box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+        background: transparent;         /* NO fill */
+        backdrop-filter: blur(2px);      /* subtle glassy feel */
+        box-shadow: 0 2px 6px rgba(0,0,0,.06);
+
         z-index: 1000;
     }
     </style>
 
     <div class="footer">
-        🚀 Built by Harbhajan The Great
+        Harbhajan The Great
     </div>
     """,
     unsafe_allow_html=True
 )
+
