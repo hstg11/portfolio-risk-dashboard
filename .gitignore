@@ -1,5 +1,30 @@
+# --- virtual environments ---
 venv/
 .venv/
+
+# --- python cache/bytecode ---
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+
+# --- environment / secrets ---
 .env
+.env.*
+
+# --- Jupyter notebooks checkpoints ---
+.ipynb_checkpoints/
+
+# --- OS files ---
+.DS_Store
+Thumbs.db
+
+# --- build artifacts ---
+dist/
+build/
+
+# --- Streamlit local app state ---
+.streamlit/
+
+# --- logs ---
+*.log
